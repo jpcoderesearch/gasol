@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @aboutu.address %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @aboutu.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @aboutu.state %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @aboutu.country %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @aboutu.phone %>
+</p>
+
+<%= link_to 'Edit', edit_aboutu_path(@aboutu) %> |
+<%= link_to 'Back', aboutus_path %>

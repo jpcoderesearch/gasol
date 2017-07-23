@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  publishing: MyString
+  software_products: MyString
+  training: MyString
+  clients: MyString
+
+two:
+  publishing: MyString
+  software_products: MyString
+  training: MyString
+  clients: MyString
