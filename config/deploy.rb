@@ -4,6 +4,8 @@ lock "3.8.2"
 set :application, "gasol"
 set :repo_url, "https://github.com/jpcoderesearch/gasol.git"
 
+set :passenger_restart_with_touch, true
+
 set :deploy_to, '/home/deploy/gasol'
 
 # Default branch is :master
