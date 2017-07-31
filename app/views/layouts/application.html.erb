@@ -10,11 +10,10 @@
 
   <body>
   		<%= render 'layouts/navbar' %>
-
-  
   	<% if user_signed_in? %>
   	<p>Hello, <%= current_user.email %>- <%= link_to "sign_out", destroy_user_session_path, :method => 'delete' %><br>
   		<% end %>
+      <%= render 'layouts/main'%>
     <%= yield %>
     <%= render 'layouts/footer' %>
 
@@ -34,6 +33,9 @@
   });
        
   $('.carousel.carousel-slider').carousel({fullWidth: true});
+  Materialize.toast('Welcome to GA solutions!', 4000)
+  Materialize.toast('E Learning!', 5000)
+  Materialize.toast('Digital publishing!', 6000)
   </script>
   </body>
 </html>
