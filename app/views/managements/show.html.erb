@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Present:</strong>
+  <%= @management.present %>
+</p>
+
+<p>
+  <strong>In time:</strong>
+  <%= @management.in_time %>
+</p>
+
+<p>
+  <strong>Out time:</strong>
+  <%= @management.out_time %>
+</p>
+
+<p>
+  <strong>Target:</strong>
+  <%= @management.target %>
+</p>
+
+<p>
+  <strong>Page processed:</strong>
+  <%= @management.page_processed %>
+</p>
+
+<p>
+  <strong>Page error:</strong>
+  <%= @management.page_error %>
+</p>
+
+<%= link_to 'Edit', edit_management_path(@management) %> |
+<%= link_to 'Back', managements_path %>

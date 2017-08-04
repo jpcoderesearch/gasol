@@ -1,5 +1,5 @@
 class AboutusController < ApplicationController
-  before_action :authenticate_user!
+  # before_action :authenticate_user!
   before_action :set_aboutu, only: [:show, :edit, :update, :destroy]
 
   # GET /aboutus

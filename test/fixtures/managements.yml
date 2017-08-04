@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  present: false
+  in_time: 2017-08-03
+  out_time: 2017-08-03
+  target: 1
+  page_processed: 1
+  page_error: 1
+
+two:
+  present: false
+  in_time: 2017-08-03
+  out_time: 2017-08-03
+  target: 1
+  page_processed: 1
+  page_error: 1

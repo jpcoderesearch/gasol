@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :managements
+  resources :clients
   resources :portfolios
   resources :contactus
   resources :services

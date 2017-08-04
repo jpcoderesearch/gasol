@@ -1,0 +1,47 @@
+<%= form_for(management) do |f| %>
+  <% if management.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(management.errors.count, "error") %> prohibited this management from being saved:</h2>
+
+      <ul>
+      <% management.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :present %>
+    <%= f.check_box :present %>
+  </div>
+
+  <div class="field">
+    <%= f.label :in_time %>
+    <%= f.date_select :in_time %>
+  </div>
+
+  <div class="field">
+    <%= f.label :out_time %>
+    <%= f.date_select :out_time %>
+  </div>
+
+  <div class="field">
+    <%= f.label :target %>
+    <%= f.number_field :target %>
+  </div>
+
+  <div class="field">
+    <%= f.label :page_processed %>
+    <%= f.number_field :page_processed %>
+  </div>
+
+  <div class="field">
+    <%= f.label :page_error %>
+    <%= f.number_field :page_error %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -13,7 +13,6 @@
   	<% if user_signed_in? %>
   	<p>Hello, <%= current_user.email %>- <%= link_to "sign_out", destroy_user_session_path, :method => 'delete' %><br>
   		<% end %>
-      <%= render 'layouts/main'%>
     <%= yield %>
     <%= render 'layouts/footer' %>
 
